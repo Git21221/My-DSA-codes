@@ -1,7 +1,7 @@
-vector<int> prefix(10000);
 class NumArray {
 public:
-    NumArray(vector<int>& nums) {
+    vector<int> prefix;
+    NumArray(vector<int>& nums) : prefix(nums){
         int n = nums.size();
         prefix[0] = nums[0];
         for(int i = 1; i < n; i++){

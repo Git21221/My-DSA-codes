@@ -9,6 +9,9 @@ int fact(int n)
 }
 public:
     int countHomogenous(string s) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
+        cout.tie(NULL);
         int l = 0, r = 0, n = s.size(), ans = 0;
         while(r <= n){
             if(s[l] == s[r]) r++;
